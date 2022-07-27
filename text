@@ -1,0 +1,24 @@
+let phoneNumber = document.getElementById("phone-number");
+let simNetwork = document.querySelector("#sim-network");
+let cardPin = document.querySelector("#card-pin");
+
+// let generatePin = document.querySelector("#generate-pin");
+// let loadPin = document.querySelector("#load-pin");
+
+// Here are our object where we will store numbers  04272346758  04272346723 entered
+let generatedToken = [];
+let newlyGenerated = { meter: "", token: "", date: 0, time: 0 };
+let loadedToken = { meter: { token: "", date: 0, time: 0 }, };
+let randomGeneratedToken = "";
+let newToken;
+let alphabet = " abcdefghijklmnopqrstuvwxyz ";
+let letter = [...alphabet];
+
+function generatePin(){
+    console.log(phoneNumber.value !== "" ? phoneNumber.value : "No phone number");
+    console.log(simNetwork.value !== "" ? simNetwork.value : "Enter network");
+}
+
+function loadPin(){
+    console.log(cardPin.value !== "" ? cardPin.value : "No Pin entered");
+}
